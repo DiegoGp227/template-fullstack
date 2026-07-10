@@ -1,7 +1,7 @@
 {
-  "name": "RM:project-name",
+  "name": "{{projectName}}",
   "version": "1.0.0",
-  "description": "RM:add-description",
+  "description": "{{projectType}} application",
   "main": "index.js",
   "scripts": {
     "dev": "tsx watch --env-file .env src/app/index.ts",
@@ -17,8 +17,9 @@
     "migrate": "prisma migrate deploy"
   },
   "keywords": [],
-  "author": "RM:add-author",
-  "license": "RM:add-license",
+  "author": "",
+  "license": "MIT",
+  "repository": "github:{{githubRepo}}",
   "packageManager": "pnpm@10.28.2",
   "dependencies": {
     "@prisma/adapter-pg": "^7.8.0",

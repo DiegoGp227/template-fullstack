@@ -1,12 +1,12 @@
 services:
   postgres:
     image: postgres:16-alpine
-    container_name: template-postgres
+    container_name: {{projectName}}-postgres
     restart: unless-stopped
     environment:
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: template_db
+      POSTGRES_DB: {{projectName}}_db
     ports:
       - "${POSTGRES_PORT:-5432}:5432"
     volumes:
@@ -21,7 +21,7 @@ services:
     build:
       context: ./back
       dockerfile: Dockerfile
-    container_name: template-back
+    container_name: {{projectName}}-backend
     restart: unless-stopped
     ports:
       - "${BACK_PORT:-8000}:8000"
@@ -34,7 +34,7 @@ services:
   front:
     build:
       context: ./front
-    container_name: template-front
+    container_name: {{projectName}}-frontend
     restart: unless-stopped
     ports:
       - "${FRONT_PORT:-3000}:3000"
@@ -42,4 +42,4 @@ services:
       - back
 
 volumes:
-  postgres_data:
+  {{projectName}}_postgres_data:

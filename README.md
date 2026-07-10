@@ -1,15 +1,17 @@
-# RM: Project Name
+# {{projectName}}
 
-Template project with a pre-configured full-stack stack using Express + Prisma + Next.js. Replace all `RM:` markers with your own values.
+{{projectType}} template with Express + Prisma + Next.js.
 
 - **Backend**: Express + Prisma + PostgreSQL + JWT auth
 - **Frontend**: Next.js
 - **Docker Compose** for local development
 
+GitHub repo: [{{githubRepo}}](https://github.com/{{githubRepo}})
+
 ## Quick Start
 
 ```bash
-# 1. Copy env vars and edit them (RM: update values)
+# 1. Copy env vars and edit them
 cp .env.example .env
 
 # 2. Start PostgreSQL
@@ -33,4 +35,6 @@ Or run everything with Docker:
 docker compose up --build
 ```
 
-## RM: Add more documentation here
+## Documentation
+
+Add project documentation here.

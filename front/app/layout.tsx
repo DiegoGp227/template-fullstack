@@ -16,10 +16,10 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "RM:Reemplazar con el nombre de tu App",
-  description: "RM:Reemplazar con la descripcion de tu App",
+  title: "{{projectName}}",
+  description: "{{projectType}} application",
   icons: {
-    icon: "RM:Reemplazar con la ruta de tu icono",
+    icon: "/favicon.ico",
   },
 };
 
