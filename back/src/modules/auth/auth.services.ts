@@ -1,10 +1,9 @@
 // RM: Services Example — replace with your own services
 import bcrypt from "bcryptjs";
 import jwt, { SignOptions } from "jsonwebtoken";
-import { EmailAlreadyInUseError, InvalidCredentialsError } from "../../errors/appError.js";
-import prisma from "../../db/prisma.js";
-import { IAuthUser, ICreateUser, IUserResponse } from "./auth.types";
-import { env } from "../../config/env.js";
+import { EmailAlreadyInUseError, InvalidCredentialsError } from "../../errors/appError";
+import prisma from "../../lib/prisma";
+import { env } from "../../config/env";
 
 export const createUser = async (
   userData: ICreateUser,
