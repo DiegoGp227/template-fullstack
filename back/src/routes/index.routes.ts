@@ -1,6 +1,6 @@
 import { Router } from "express";
-import dbCheck from "../modules/test/test.js";
-import { login, signup } from "../modules/auth/auth.controllers.js";
+import dbCheck from "../modules/test/test";
+import { login, signup } from "../modules/auth/auth.controllers";
 export const router: Router = Router();
 
 // RM: Test Routes — remove/replace in production

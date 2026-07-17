@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
-import { AppError, InternalServerError } from "../errors/appError.js";
-import { logger } from "../utils/logger.js";
+import { AppError, InternalServerError } from "../errors/appError";
+import { logger } from "../utils/logger";
 
 export const errorHandler = (
   error: unknown,

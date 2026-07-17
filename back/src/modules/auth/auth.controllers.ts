@@ -1,9 +1,9 @@
 // RM: Controller Example — replace with your own logic
 import { Request, Response } from "express";
-import { ValidationError } from "../../errors/appError.js";
-import { asyncHandler } from "../../middlewares/asyncHandler.js";
-import { createUser, validateUser } from "./auth.services.js";
-import { loginSchema, signupSchema } from "./auth.schemas.js";
+import { ValidationError } from "../../errors/appError";
+import { asyncHandler } from "../../middlewares/asyncHandler";
+import { createUser, validateUser } from "./auth.services";
+import { loginSchema, signupSchema } from "./auth.schemas";
 
 /**
  * @route POST /signup
